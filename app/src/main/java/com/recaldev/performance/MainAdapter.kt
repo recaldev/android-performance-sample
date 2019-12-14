@@ -41,10 +41,14 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
             globerName.text = glober.name
             globerDescription.text = glober.description
 
-            Glide.with(itemView.context)
-                .load(glober.avatarRes)
-                .centerCrop()
-                .into(globerAvatar)
+            if (glober.avatarRes == NO_AVATAR) {
+                globerAvatar.setImageResource(R.color.colorPrimary)
+            } else {
+                Glide.with(itemView.context)
+                    .load(glober.avatarRes)
+                    .centerCrop()
+                    .into(globerAvatar)
+            }
         }
     }
 }
