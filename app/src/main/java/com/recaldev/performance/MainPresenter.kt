@@ -68,6 +68,9 @@ class MainPresenter {
             NO_AVATAR
         )
 
-        return listOf(glober1, glober2, glober3, glober4, glober5, glober6, glober7, glober8, glober9)
+        return listOf(
+            glober1, glober2, glober3, glober4, glober5, glober6, glober7, glober8, glober9,
+            glober1, glober2, glober3, glober4, glober5, glober6, glober7, glober8, glober9
+        )
     }
 }
