@@ -9,7 +9,9 @@ We cover the following topics:
 * Layout Hierarchy
   * feature/layout-hierarchy-fix
 * Memory Usage
+  * gerardosuarez/memory_leak_context
 * Compute
+  * gerardosuarez/performance-computation
 
 Additionally, we have gather some articles and courses that can help you to go deeper on this topics:
 * Free Performance Course from Google: https://classroom.udacity.com/courses/ud825
