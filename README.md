@@ -1,6 +1,6 @@
 # Android Performance Sample
 
-This repository is intended to explain some performance issues that we may have on our Android Apps, anyone interested in learn is welcomed to take a look at this.
+This repository was created to explain some performance issues that we may have on our Android Apps, anyone interested in learn and improve themselves are welcome to take a look at it.
 
 We cover the following topics:
 * Overdraw
