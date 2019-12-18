@@ -1,12 +1,13 @@
 package com.recaldev.performance
 
-class MainPresenter {
+class MainPresenter(val repository: Repository) {
 
     interface View {
         // TODO
     }
 
-    fun init() {
+    fun getUser(): List<User> {
         // TODO
+        return repository.getUser()
     }
 }
