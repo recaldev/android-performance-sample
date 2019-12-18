@@ -1,5 +1,6 @@
 package com.recaldev.performance
 
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 
 
@@ -15,19 +16,21 @@ class MainPresenter(
     private var compositeDisposable = CompositeDisposable()
 
 
-    fun getUser() {
-        view.showNumberOfUsersMessage(repository.getUsers().size)
+    fun getUser(numberOfUsers: Int) {
+        view.showNumberOfUsersMessage(repository.getUsers(numberOfUsers).size)
     }
 
 
+
     /*
-    fun getUser() {
+    fun getUser(numberOfUsers: Int) {
         compositeDisposable.add(
-            repository.getUser()
+            repository.getUsers(numberOfUsers)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({ view.showNumberOfUsersMessage(it.size) },
                 {})
         )
     }
-    */
+
+     */
 }

@@ -13,11 +13,13 @@ class MainActivity : AppCompatActivity(), MainPresenter.View {
         setContentView(R.layout.activity_main)
 
         presenter = MainPresenter(Repository(), this)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        presenter.getUser()
+        button.setOnClickListener {
+            textViewNumberOfUsers.text = "Number of users: ????"
+            val numberOfUsers = editTextNumberOfUsers.text.toString()
+            if (numberOfUsers.isNotEmpty()) {
+                presenter.getUser(editTextNumberOfUsers.text.toString().toInt())
+            }
+        }
     }
 
     override fun onPause() {

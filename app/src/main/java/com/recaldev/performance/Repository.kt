@@ -1,33 +1,31 @@
 package com.recaldev.performance
 
+import io.reactivex.Single
+import io.reactivex.schedulers.Schedulers
+
 class Repository {
 
-    fun getUsers(): List<User> {
+    fun getUsers(numberOfUsers: Int): List<User> {
         val list = mutableListOf<User>()
-        for (x in 1..NUMBER_OF_USERS) {
+        for (x in 1..numberOfUsers) {
             list.add(User("gerard"))
         }
         return list
     }
 
-    /*
 
-    fun getUsers(): Single<MutableList<User>> {
+
+    /*
+    fun getUsers(numberOfUsers: Int): Single<MutableList<User>> {
         return Single.fromCallable {
             val list = mutableListOf<User>()
-            for (x in 1..NUMBER_OF_USERS) {
+            for (x in 1..numberOfUsers) {
                 list.add(User("gerard"))
             }
             list
         }.subscribeOn(Schedulers.computation())
     }
-
      */
-
-    companion object {
-        private const val NUMBER_OF_USERS = 10
-        //private const val NUMBER_OF_USERS = 10000000
-    }
 }
 
 
