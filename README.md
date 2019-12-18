@@ -13,7 +13,7 @@ We cover the following topics:
 * Compute
   * gerardosuarez/performance-computation
 
-Additionally, we have gather some articles and courses that can help you to go deeper on this topics:
+Additionally, we have gathered some articles and courses that can help you go deeper on this topics:
 * Free Performance Course from Google: https://classroom.udacity.com/courses/ud825
 * Undertanding Overdraw: https://www.youtube.com/watch?v=T52v50r-JfE
 * Reduce Overdraw: https://developer.android.com/topic/performance/rendering/overdraw
