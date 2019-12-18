@@ -1,7 +1,9 @@
 package com.recaldev.performance
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainPresenter.View {
 
@@ -10,6 +12,10 @@ class MainActivity : AppCompatActivity(), MainPresenter.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        buttonGoToNextScreen.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
 
         presenter =  MainPresenter()
         presenter.init()

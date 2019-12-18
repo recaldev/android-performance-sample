@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PerformanceSample</string>
+    <string name="this_is_the_second_activity">This is the second activity!</string>
+    <string name="go_to_next_screen">Go to next screen</string>
 </resources>
