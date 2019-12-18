@@ -25,7 +25,8 @@ class Repository {
      */
 
     companion object {
-        private const val NUMBER_OF_USERS = 17000000
+        private const val NUMBER_OF_USERS = 10
+        //private const val NUMBER_OF_USERS = 10000000
     }
 }
 

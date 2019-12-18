@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity(), MainPresenter.View {
         presenter.getUser()
     }
 
+    override fun onPause() {
+        super.onPause()
+        textViewNumberOfUsers.text = "Number of users: ????"
+    }
+
     override fun showNumberOfUsersMessage(numberOfUsers: Int) {
         textViewNumberOfUsers.text = "Number of users: $numberOfUsers"
     }
