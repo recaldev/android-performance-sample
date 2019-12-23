@@ -20,6 +20,7 @@ Additionally, we have gathered some articles and courses that can help you go de
 * Inspect GPU Rendering: https://developer.android.com/topic/performance/rendering/inspect-gpu-rendering
 * The Hidden Cost of Transparency: https://www.youtube.com/watch?v=wIy8g8yNhNk
 * Performance and View Hierarchies: https://developer.android.com/topic/performance/rendering/optimizing-view-hierarchies
+* Constraint Layout Code Lab: https://codelabs.developers.google.com/codelabs/constraint-layout/#0
 * ViewStub: https://developer.android.com/reference/android/view/ViewStub
 * Merge & Include: https://developer.android.com/training/improving-layouts/reusing-layouts
 * Android Memory Profiler Getting Started: https://www.raywenderlich.com/4557771-android-memory-profiler-getting-started
