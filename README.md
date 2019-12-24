@@ -2,6 +2,8 @@
 
 This repository was created to explain some performance issues that we may have on our Android Apps, anyone interested in learn and improve themselves are welcome to take a look at it.
 
+You can find the tech talk here: https://youtu.be/FOb1bPlJLfs
+
 We cover the following topics:
 * Overdraw
   * feature/overdraw-issue
