@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), MainPresenter.View {
         presenter.init(this)
     }
 
-    override fun loadData(globers: List<Glober>) {
-        adapter.globers = globers
+    override fun loadData(friends: List<Friend>) {
+        adapter.friends = friends
     }
 }

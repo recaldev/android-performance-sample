@@ -13,7 +13,7 @@ const val NO_AVATAR = 0
 
 class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
-    var globers: List<Glober> by Delegates.observable(
+    var friends: List<Friend> by Delegates.observable(
         emptyList(),
         { _, _, _ -> notifyDataSetChanged() }
     )
@@ -25,24 +25,24 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
         )
     }
 
-    override fun getItemCount(): Int = globers.size
+    override fun getItemCount(): Int = friends.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(globers[position])
+        holder.bind(friends[position])
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private var globerAvatar: ImageView = itemView.findViewById(R.id.glober_avatar)
-        private var globerName: TextView = itemView.findViewById(R.id.glober_name)
-        private var globerDescription: TextView = itemView.findViewById(R.id.glober_description)
+        private var globerAvatar: ImageView = itemView.findViewById(R.id.friend_avatar)
+        private var globerName: TextView = itemView.findViewById(R.id.friend_name)
+        private var globerDescription: TextView = itemView.findViewById(R.id.friend_description)
 
-        fun bind(glober: Glober) {
-            globerName.text = glober.name
-            globerDescription.text = glober.description
+        fun bind(friend: Friend) {
+            globerName.text = friend.name
+            globerDescription.text = friend.description
 
             Glide.with(itemView.context)
-                .load(glober.avatarRes)
+                .load(friend.avatarRes)
                 .centerCrop()
                 .into(globerAvatar)
         }

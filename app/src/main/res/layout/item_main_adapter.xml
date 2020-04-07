@@ -6,7 +6,7 @@
     android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/glober_avatar"
+        android:id="@+id/friend_avatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -30,7 +30,7 @@
             android:textColor="#78A">
 
             <TextView
-                android:id="@+id/glober_name"
+                android:id="@+id/friend_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -40,7 +40,7 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/glober_description"
+            android:id="@+id/friend_description"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/white"
