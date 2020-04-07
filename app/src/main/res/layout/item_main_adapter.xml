@@ -6,7 +6,7 @@
     android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/glober_avatar"
+        android:id="@+id/friend_avatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -17,24 +17,24 @@
         tools:src="@drawable/icon1" />
 
     <TextView
-        android:id="@+id/glober_name"
+        android:id="@+id/friend_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:padding="6dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glober_avatar"
+        app:layout_constraintStart_toEndOf="@+id/friend_avatar"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Diego Recalde" />
 
     <TextView
-        android:id="@+id/glober_description"
+        android:id="@+id/friend_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:padding="6dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glober_avatar"
-        app:layout_constraintTop_toBottomOf="@+id/glober_name"
+        app:layout_constraintStart_toEndOf="@+id/friend_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/friend_name"
         tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
 </androidx.constraintlayout.widget.ConstraintLayout>

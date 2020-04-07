@@ -33,9 +33,9 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private var globerAvatar: ImageView = itemView.findViewById(R.id.glober_avatar)
-        private var globerName: TextView = itemView.findViewById(R.id.glober_name)
-        private var globerDescription: TextView = itemView.findViewById(R.id.glober_description)
+        private var globerAvatar: ImageView = itemView.findViewById(R.id.friend_avatar)
+        private var globerName: TextView = itemView.findViewById(R.id.friend_name)
+        private var globerDescription: TextView = itemView.findViewById(R.id.friend_description)
 
         fun bind(glober: Glober) {
             globerName.text = glober.name
