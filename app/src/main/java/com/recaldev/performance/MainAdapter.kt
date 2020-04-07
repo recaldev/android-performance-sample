@@ -13,7 +13,7 @@ const val NO_AVATAR = 0
 
 class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
-    var globers: List<Glober> by Delegates.observable(
+    var friends: List<Friend> by Delegates.observable(
         emptyList(),
         { _, _, _ -> notifyDataSetChanged() }
     )
@@ -25,29 +25,29 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
         )
     }
 
-    override fun getItemCount(): Int = globers.size
+    override fun getItemCount(): Int = friends.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(globers[position])
+        holder.bind(friends[position])
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private var globerAvatar: ImageView = itemView.findViewById(R.id.friend_avatar)
-        private var globerName: TextView = itemView.findViewById(R.id.friend_name)
-        private var globerDescription: TextView = itemView.findViewById(R.id.friend_description)
+        private var friendAvatar: ImageView = itemView.findViewById(R.id.friend_avatar)
+        private var friendName: TextView = itemView.findViewById(R.id.friend_name)
+        private var friendDescription: TextView = itemView.findViewById(R.id.friend_description)
 
-        fun bind(glober: Glober) {
-            globerName.text = glober.name
-            globerDescription.text = glober.description
+        fun bind(friend: Friend) {
+            friendName.text = friend.name
+            friendDescription.text = friend.description
 
-            if (glober.avatarRes == NO_AVATAR) {
-                globerAvatar.setImageResource(R.color.colorPrimary)
+            if (friend.avatarRes == NO_AVATAR) {
+                friendAvatar.setImageResource(R.color.colorPrimary)
             } else {
                 Glide.with(itemView.context)
-                    .load(glober.avatarRes)
+                    .load(friend.avatarRes)
                     .centerCrop()
-                    .into(globerAvatar)
+                    .into(friendAvatar)
             }
         }
     }
