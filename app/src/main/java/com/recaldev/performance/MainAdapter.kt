@@ -33,18 +33,18 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private var globerAvatar: ImageView = itemView.findViewById(R.id.friend_avatar)
-        private var globerName: TextView = itemView.findViewById(R.id.friend_name)
-        private var globerDescription: TextView = itemView.findViewById(R.id.friend_description)
+        private var friendAvatar: ImageView = itemView.findViewById(R.id.friend_avatar)
+        private var friendName: TextView = itemView.findViewById(R.id.friend_name)
+        private var friendDescription: TextView = itemView.findViewById(R.id.friend_description)
 
         fun bind(friend: Friend) {
-            globerName.text = friend.name
-            globerDescription.text = friend.description
+            friendName.text = friend.name
+            friendDescription.text = friend.description
 
             Glide.with(itemView.context)
                 .load(friend.avatarRes)
                 .centerCrop()
-                .into(globerAvatar)
+                .into(friendAvatar)
         }
     }
 }
